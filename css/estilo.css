@@ -1,0 +1,142 @@
+@charset "utf-8";
+div{
+	border: dotted 0px yellow;
+}
+#logo{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+#curso{
+	display:table-cell;
+	vertical-align:middle;
+	font-size: 12px;
+}	
+
+/* TOPO */
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*---------------- SOCIAL ----------------*/
+#social{
+	margin-top:3%;
+	margin-bottom:3%;
+}
+#i.facebook{
+	color: #fff;
+    background-color: #3b5998;
+    border-color: rgba(0,0,0,0.2);	
+}
+#i.twitter{
+	
+}
+#i.gplus{
+	color: #fff;
+    background-color: #dd4b39;	
+}
+#i.youtube{
+	
+}
+#i.linkedin{
+	color: #fff;
+    background-color: #007bb6;
+    border-color: rgba(0,0,0,0.2);
+}
+/*---------------- FIM SOCIAL ----------------*/
+
+/* DIVULGA */
+img.curso{	
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+a.senac{
+	font-family: 'Roboto', sans-serif;
+	color:#455A64;
+	text-decoration: inherit; /* no underline */
+}
+/*---------------- FIM DIVULGA ----------------*/
+
+
+/*---------------- MENU ----------------*/
+#menu-PI{
+	font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 48pt;
+    padding-bottom: 15px;
+    text-decoration: blink;
+}
+
+#list-menu-PI{
+    background-color: #455A64;
+	color: #455A64;
+}
+
+a.list-menu-PI{
+	color: #fff;
+	text-decoration: inherit;
+}
+
+a.list-menu-PI:hover { 
+	text-decoration: inherit;
+	color: #455A64;
+	text-shadow: 0 0 3px #FFC107;
+	}
+
+#list-menu-PI:hover{
+    background-color: #FFC107;
+	font-size: 20px;
+	color: #FFC107;
+}
+/*---------------- FIM MENU ----------------*/
+
+
+
+/*---------------- CONTEUDO ----------------*/
+#content{
+	text-align: justify;
+    text-justify: inter-word;
+}
+
+#content h1{
+	font-family: 'Roboto', sans-serif;
+    color: #455A64;
+    font-size: 30px;
+    text-shadow: 2px 2px #FFC107;
+	vertical-align:middle;
+	margin:auto;
+}
+/*---------------- FIM CONTEUDO ----------------*/
+
+
+/*---------------- RODAPE ----------------*/
+#rodape{
+	display: block;
+	background-color: #FFC107;
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+	clear: both;
+	float: bottom;
+}
+
+#rodape-esquerda{
+	vertical-align:middle;
+	font-family: 'Roboto', sans-serif;
+    font-size: 12px;	
+}
+#rodape-central{
+	vertical-align:middle;
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+#rodape-dir{
+	vertical-align:middle;
+	font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
