@@ -1,57 +1,190 @@
-﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="author" content="Henique Prieto Rigio / Renato Gonçalves/Paulo">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Henrique Prieto Rigio , Renato Gonçalves , Paulo">
     <meta name="description" content="projeto feito pelo primeiro semestre de sistemas para internet">
-    <meta name="keywords" content="pi,projeto integrador,julliet HTML/CSS">
-    <link rel="stylesheet" type="text/css" href="CSS/estilo.css">
-    <title>Qr code</title>
-<style type="text/css">
-.heading {
-	align-items:center
-}
-</style> 
- </head>
-  
+    <meta name="keywords" content="qr,qr code,juliet HTML/CSS">
+    <title>Juliet</title>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/estilo.css" rel="stylesheet">
+
+	<!-- Social Icons-->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    </head>
   <body>
-<div class="heading" id="topo">
-        <!-- logo a ser definido -->
-        <img id="logo" src="images/logo.png">
-		<!-- Link em forma da Imagem a ser destinado para a página do curso no SENAC -->
-        <span><img src="senac.jpg" href="http://goo.gl/xfmiF4" alt="Graduação - Tecnologia em Sistemas para Internet"></span>
-    
-</div>
- <div id="bredcrumbs"> </div>    
-	<div id="nav">
-      		<ul id="menu">
-        	  <li><a href="#">Home</a></li>
-       	 	  <li><a href="#">Projeto Integrador</a></li>
-        	  <li><a href="#">Qr code</a></li>
-        	  <li><a href="#">outros projetos</a></li>
-        	  <li><a href="#">contatos</a></li>
-        	</ul>
+	<div class="container-fluid">
+		<div class="col-md-10 col-md-offset-1">
+			<!-- TOPO -->
+			<div class="row center-block">
+				<div class="col-md-12">
+					<a href="home.html"><img id="logo" alt="Juliet Calçados - Logo" src="images/logo.png" /></a>
+				</div>
+			</div>
+			<!-- FIM TOPO -->
+			
+			<!-- Nova Linha -->
+			<div class="row">
+				<!-- Lado esquerdo -->
+				<div class="col-md-3 media-middle text-center" id="social">
+					<a href="https://www.facebook.com/sistemasinternet"><i class="fa fa-facebook-square fa-2x" id="facebook"></i></a>&nbsp
+					<a href="https://twitter.com/senacsaopaulo"><i class="fa fa-twitter fa-2x" id="twitter"></i></a>&nbsp
+					<a href="https://plus.google.com/+senacsaopaulo"><i class="fa fa-google-plus fa-2x" id="gplus"></i></a>&nbsp
+					<a href="https://www.youtube.com/user/senacsaopaulo"><i class="fa fa-youtube-square fa-2x" id="youtube"></i></a>&nbsp
+					<a href="https://www.linkedin.com/company/165919"><i class="fa fa-linkedin fa-2x" id="linkedin"></i></a>&nbsp
+				</div>
+				<!-- Central -->
+				<div class="hidden-xs col-md-6 col-xs-3 media-middle text-center" id="breadcrumbs">
+					<ol class="breadcrumb">
+						<li class="active"><a href="home.html">Home</a></li>
+                        <li class="active">Qr Code</li>
+					</ol>
+				</div>
+
+				<!-- Lado direito -->
+				<div class="col-md-3 media-middle">
+                	<a class="senac" href="http://www.sp.senac.br/jsp/default.jsp?newsID=DYNAMIC,oracle.br.dataservers.CourseDataServer,selectCourse&course=10600&type=G&template=409.dwt&unit=NONE&testeira=723&sub=0">
+                    <img class="img-rounded curso" src="images/senac.png" alt="Senac - Graduação - Tecnologia em Sistemas para Internet"/>
+					</a>
+				</div>
+			</div>
+			<!-- FIM Nova Linha -->
+            
+				<!-- Menu -->			
+				<div class="hidden-xs hidden-sm col-xs-12 col-sm-3 col-md-3" id="menu-esq">
+					<ul class="list-group " id="menu-PI">
+					  <li class="list-group-item" id="list-menu-PI"><a href="home.html">Home</a></li>
+					  <li class="list-group-item" id="list-menu-PI"><a href="pi.html">Projeto Integrador</a></li>
+					  <li class="list-group-item" id="list-menu-PI"><a href="qr_code.html">Qr Code</a></li>
+					  <li class="list-group-item" id="list-menu-PI"><a href="outros_projetos.html">Outros Projetos</a></li>
+					  <li class="list-group-item" id="list-menu-PI"><a href="contato.html">Contato</a></li>
+					</ul>
+				</div>
+				<!-- FIM Menu -->			                
+
+				
+				<!-- Menu Mobile -->
+				
+				<div class="hidden-md hidden-lg dropdown">
+					<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					MENU
+					<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" id="menu-mobile" aria-labelledby="dropdownMenu1">
+						<li><a href="home.html">Home</a></li>
+						<li><a href="pi.html">Projeto Integrador</a></li>
+						<li><a href="qr_code.html">Qr Code</a></li>
+						<li><a href="outros_projetos.html">Outros Projetos</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
+				</div>
+				<!-- FIM Menu Mobile-->		
+				
+                <!-- CONTEUDO -->
+				
+                               
+				<div class="col-md-6 media-middle" id="content">
+                	<h1 class="text-center">QR Code</h1>
+                        <p>QR Code, derivado do termo "Quick Response" em inglês, e "Code" em inglês, traduzido para língua portuguesa significa código de resposta rápida, ou seja, um objeto de fácil decodificação e em alta velocidade, no caso através de uma imagem, que mais se parece como uma nova versão de um código de barras.</p>  
+						<p>O QR Code pode auxiliar na disseminação de ações de marketing de empresas, transporte de dados, identificação de produtos e para nós, o mais importante a reprodução de um site através do código intepretado como por exemplo, por um smartphone.</p>
+						
+						
+					<div id="qr_code" class="media-middle text-center">	
+						<img id="qr" src="http://api.qrserver.com/v1/create-qr-code/?color=000000&amp;bgcolor=FFFFFF&amp;data=http%3A%2F%2Fwww.sp.senac.br%2Fjsp%2Fdefault.jsp%3FnewsID%3DDYNAMIC%2Coracle.br.dataservers.CourseDataServer%2CselectCourse%26course%3D10600%26type%3DG%26template%3D409.dwt%26unit%3DNONE%26testeira%3D723%26sub%3D0&amp;qzone=1&amp;margin=0&amp;size=350x350&amp;ecc=L" alt="qr code" />
+						<img id="arrow" src="images/arrow.png" alt="arrow right" />
+						<img id="cel" src="images/cellphone.png" alt="celular" />
+					</div>
+					
+				</div>
+				
+				
+			<!-- CONTEUDO - LADO DIREITO -->
+				<div class=".hidden-xs col-md-3">
+					<div class="input-group">
+					  <input type="text" class="form-control" placeholder="Localizar conteúdo..">
+					  <span class="input-group-btn">
+						<button class="btn btn-default" type="button">Pesquisar</button>
+					  </span>
+					</div>
+					<p><iframe width="250" height="188" src="https://www.youtube.com/embed/PQin7NsK7SM?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></p>
+				</div>
+			</div>
+			<!-- FIM CONTEUDO -->
+		</div>
+	
 	</div>
-      
+    <!-- RODAPE -->
+    
 	
-<p>texto texto texto texto texto</p>
-<div id="search"></div>
 	
-  <img src="link" >
+		<footer class="footer-distributed">
+
+			<div class="footer-center">
+
+				<div>
+					<i class="hidden-xs hidden-sm fa fa-university"></i>
+					<p><span>Campus Senac</span> Unidade Santo Amaro</p>
+				</div>
+
+				<div>
+					<i class="hidden-xs hidden-sm fa fa-map-marker"></i>
+					<p><span>Av. Engenheiro Eusébio Stevaux, 823</span> 
+					<span>CEP: 04696-000</span></p>
+				</div>
+
+				<div>
+					<i class="hidden-xs hidden-sm fa fa-phone"></i>
+					<p>(11) 5682-7300</p>
+					<p>(11) 5682-7441</p>
+				</div>
+
+				<div>
+					<i class="hidden-xs hidden-sm fa fa-envelope"></i>
+					<p><a href="mailto:universitariosantoamaro@sp.senac.br">universitariosantoamaro@sp.senac.br</a></p>
+				</div>
+
+			</div>
+			<div class="footer-left media-middle text-center">
+
+				<img class="imgfoot" alt="Juliet Calçados - Logo" src="images/logo.png" /></a>
+				<span>&copy; 2015</span>
+				<p>Elaborado com <a href="http://getbootstrap.com">Bootstrap</a></p>
+			</div>
+
+			
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>Confira também as empresas parceiras:</span>
+					
+					
+					<p><i class="fa fa-plus-circle"></i>  Kanino</p>
+					<p><i class="fa fa-plus-circle"></i>  Lotus</p>
+				</p> 
+				<p class="footer-links">
+					<a href="outros_projetos.html">Acesse: Outros Projetos</a>
+				</p>
+			</div>
+
+		</footer>
 	
-<width=370px height=278px alt="imagem">
 	
-		     	
-     
-      <div id="footer">
-      	<h4>local ->senac (Av. Engenheiro Eusébio Stevaux, 823 - Santo Amaro
-São Paulo - SP  CEP: 04696-000
-Telefone: (11) 5682-7300  (11) 5682-7441
-E-mail: universitariosantoamaro@sp.senac.br
-CNPJ: 03.709.814/0064-71)</h4>
-        <h4>copright &copy;</h4>      
-     <h4>links importantes</h4>
-      <h4>veja tambem</h4>
-    </div>
+    <!-- FIM RODAPE -->
   </body>
 </html>

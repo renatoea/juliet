@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Henrique Prieto Rigio , Renato Gonçalves , Paulo">
-    <meta name="description" content="Descrição projeto feito pelo primeiro semestre de sistemas para internet">
-    <meta name="keywords" content="pi,projeto integrador,juliet">
-    <title>Projeto Integrador</title>
+    <meta name="description" content="projeto feito pelo primeiro semestre de sistemas para internet">
+    <meta name="keywords" content="pi,projeto integrador,juliet HTML/CSS">
+    <title>Juliet</title>
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Bootstrap -->
@@ -16,21 +16,25 @@
 
 	<!-- Social Icons-->
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	   
+	
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    </head>
   <body>
 	<div class="container-fluid">
 		<div class="col-md-10 col-md-offset-1">
 			<!-- TOPO -->
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2">
-					<img id="logo" class="img-thumbnail center-block" alt="140x140" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzE0MHgxNDAKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNTBjNTc0NTllZSB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1MGM1NzQ1OWVlIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ1LjUiIHk9Ijc0LjUiPjE0MHgxNDA8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" />
+			<div class="row center-block">
+				<div class="col-md-12">
+					<a href="home.html"><img id="logo" alt="Juliet Calçados - Logo" src="images/logo.png" /></a>
 				</div>
 			</div>
 			<!-- FIM TOPO -->
@@ -38,54 +42,33 @@
 			<!-- Nova Linha -->
 			<div class="row">
 				<!-- Lado esquerdo -->
-				<div class="col-md-3" id="social">
-					<a href="https://www.facebook.com/sistemasinternet"><i class="fa fa-facebook-square fa-3x" id="facebook"></i></a>&nbsp
-					<a href="https://twitter.com/senacsaopaulo"><i class="fa fa-twitter fa-3x" id="twitter"></i></a>&nbsp
-					<a href="https://plus.google.com/+senacsaopaulo"><i class="fa fa-google-plus fa-3x" id="gplus"></i></a>&nbsp
-					<a href="https://www.youtube.com/user/senacsaopaulo"><i class="fa fa-youtube-square fa-3x" id="youtube"></i></a>&nbsp
-					<a href="https://www.linkedin.com/company/165919"><i class="fa fa-linkedin fa-3x" id="linkedin"></i></a>&nbsp
+				<div class="col-md-3 media-middle text-center" id="social">
+					<a href="https://www.facebook.com/sistemasinternet"><i class="fa fa-facebook-square fa-2x" id="facebook"></i></a>&nbsp
+					<a href="https://twitter.com/senacsaopaulo"><i class="fa fa-twitter fa-2x" id="twitter"></i></a>&nbsp
+					<a href="https://plus.google.com/+senacsaopaulo"><i class="fa fa-google-plus fa-2x" id="gplus"></i></a>&nbsp
+					<a href="https://www.youtube.com/user/senacsaopaulo"><i class="fa fa-youtube-square fa-2x" id="youtube"></i></a>&nbsp
+					<a href="https://www.linkedin.com/company/165919"><i class="fa fa-linkedin fa-2x" id="linkedin"></i></a>&nbsp
 				</div>
 				<!-- Central -->
-				<div class="col-md-6" id="content">
-					&nbsp
+				<div class="hidden-xs col-md-6 col-xs-3 media-middle text-center" id="breadcrumbs">
+					<ol class="breadcrumb">
+						<li class="active"><a href="home.html">Home</a></li>
+                        <li class="active">Projeto Integrador</li>
+					</ol>
 				</div>
+				
 				<!-- Lado direito -->
 				<div class="col-md-3 media-middle">
-					<a class="senac" href="http://www.sp.senac.br/jsp/default.jsp?newsID=DYNAMIC,oracle.br.dataservers.CourseDataServer,selectCourse&course=10600&type=G&template=409.dwt&unit=NONE&testeira=723&sub=0"> 
-					<img class="img-square curso" src="images/senac.png" alt="Senac - Graduação - Tecnologia em Sistemas para Internet"/>
-					<p>Tecnologia em Sistemas para Internet </p>
+                	<a class="senac" href="http://www.sp.senac.br/jsp/default.jsp?newsID=DYNAMIC,oracle.br.dataservers.CourseDataServer,selectCourse&course=10600&type=G&template=409.dwt&unit=NONE&testeira=723&sub=0">
+                    <img class="img-rounded curso" src="images/senac.png" alt="Senac - Graduação - Tecnologia em Sistemas para Internet"/>
 					</a>
 				</div>
 			</div>
 			<!-- FIM Nova Linha -->
 			
-			<!-- BreadCrumbs / Search -->
-			<div class="row">
-				<div class="col-xs-3 col-md-3">
-					<ol class="breadcrumb">
-						<li class="active"><a href="home.html">Home</a></li>
-					</ol>
-				</div>
 
-				<div class="col-md-6" id="content">
-					<h1 class="text-center">Projeto Integrador</h1>
-				</div>
-				
-				<div class="col-lg-3">
-					<div class="input-group">
-					  <input type="text" class="form-control" placeholder="Localizar conteúdo..">
-					  <span class="input-group-btn">
-						<button class="btn btn-default" type="button">Pesquisar</button>
-					  </span>
-					</div><!-- /input-group -->
-				</div><!-- /.col-lg-6 -->
-			</div>
-			<!-- FIM BreadCrumbs / Search -->
-
-<!-- Menu -->			
-
-			<div class="row">
-				<div class="col-md-3 " id="menu-esq">
+				<!-- Menu -->			
+				<div class="hidden-xs hidden-sm col-xs-12 col-sm-3 col-md-3" id="menu-esq">
 					<ul class="list-group " id="menu-PI">
 					  <li class="list-group-item" id="list-menu-PI"><a href="home.html">Home</a></li>
 					  <li class="list-group-item" id="list-menu-PI"><a href="pi.html">Projeto Integrador</a></li>
@@ -94,42 +77,107 @@
 					  <li class="list-group-item" id="list-menu-PI"><a href="contato.html">Contato</a></li>
 					</ul>
 				</div>
+				<!-- FIM Menu -->			                
 
-<!-- FIM Menu -->			                
-                
-                                <!-- CONTEUDO -->
-				<div class="col-md-6" id="content">
-		              aaaaaa
+				
+				<!-- Menu Mobile -->
+				
+				<div class="hidden-md hidden-lg dropdown">
+					<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					MENU
+					<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" id="menu-mobile" aria-labelledby="dropdownMenu1">
+						<li><a href="home.html">Home</a></li>
+						<li><a href="pi.html">Projeto Integrador</a></li>
+						<li><a href="qr_code.html">Qr Code</a></li>
+						<li><a href="outros_projetos.html">Outros Projetos</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
 				</div>
-				<div class="col-md-3">
-					<img src="images/b6d615.png" alt="banner_170x520" />
+				<!-- FIM Menu Mobile-->				                
+                
+                <!-- CONTEUDO -->
+				<div class="col-md-6" id="content">
+   					<h1 class="text-center">Projeto Integrador</h1>
+					<p>O Projeto Integrador unificado consiste em três empresas fictícias, de cunho comercial do  ramo de calçados,  veterinária e cosméticos.  Os alunos dos demais semestres ficam encarregados de cada parte do sistema de uma empresa.</p>
+                   	<p>O <em>1º semestre</em> do curso se encarrega da construção do site institucional da empresa, descrevendo conceitos como a função do P.I unificado e exposição de fotos.</p>
+                    <p>Já o <em>2º semestre</em> é responsavel pelo sistema que cadastra os produtos que seriam posteriormente vendidos na empresa.</p>
+                    <p>O <em>3º semestre</em> da sequência ao projeto do 2º, desenvolvendo o sistema de e- commerce que possibilita a venda dos produtos cadastrados.</p>
+                    <p>Quanto ao <em>4º semestre</em>, estes são os responsáveis em desenvolver um aplicativo mobile que permite a venda dos produtos através da leitura do inovador QR Code, o que é um segmento em alta no mercado e tecnologia.</p>
+                    <p>O <em>5º semestre</em> fica encarregado de formular graficos, relatórios e análises que irão ajudar os gestores das empresas a administrar o desempenho das vendas entre outras funções.</p>
+				</div>
+			<!-- CONTEUDO - LADO DIREITO -->
+				<div class=".hidden-xs col-md-3">
+					<div class="input-group">
+					  <input type="text" class="form-control" placeholder="Localizar conteúdo..">
+					  <span class="input-group-btn">
+						<button class="btn btn-default" type="button">Pesquisar</button>
+					  </span>
+					</div>
+					<p><iframe width="250" height="188" src="https://www.youtube.com/embed/PQin7NsK7SM?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></p>
 				</div>
 			</div>
 			<!-- FIM CONTEUDO -->
-			<!-- RODAPE -->
-			<div class="row">
-				<div class="col-md-4" id="rodape-esquerda">
-					<p>Campus Senac - Santo Amaro</p>
-					<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="245" height="200" src="https://maps.google.com/maps?hl=en&q=Av. Engenheiro Eusébio Stevaux, 823&ie=UTF8&t=k&z=14&iwloc=B&output=embed"><div><small></div></iframe>
-					<p>São Paulo - SP  CEP: 04696-000</p>
-					<p>Telefones: (11) 5682-7300  (11) 5682-7441</p>
-				</div>
-				
-				<div class="col-md-4 text-center" id="rodape-central">
-					&copy; Juliet 2015
-				</div>
-				
-				<div class="col-md-4 text-left" id="rodape-dir">
-					links importantes
-					veja tambem
-				</div>
-			</div>
-			<!-- FIM RODAPE -->
 		</div>
+	
 	</div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- RODAPE -->
+    
+	
+	
+		<footer class="footer-distributed">
+
+			<div class="footer-center">
+
+				<div>
+					<i class="hidden-xs hidden-sm fa fa-university"></i>
+					<p><span>Campus Senac</span> Unidade Santo Amaro</p>
+				</div>
+
+				<div>
+					<i class="hidden-xs hidden-sm fa fa-map-marker"></i>
+					<p><span>Av. Engenheiro Eusébio Stevaux, 823</span> 
+					<span>CEP: 04696-000</span></p>
+				</div>
+
+				<div>
+					<i class="hidden-xs hidden-sm fa fa-phone"></i>
+					<p>(11) 5682-7300</p>
+					<p>(11) 5682-7441</p>
+				</div>
+
+				<div>
+					<i class="hidden-xs hidden-sm fa fa-envelope"></i>
+					<p><a href="mailto:universitariosantoamaro@sp.senac.br">universitariosantoamaro@sp.senac.br</a></p>
+				</div>
+
+			</div>
+			<div class="footer-left media-middle text-center">
+
+				<img class="imgfoot" alt="Juliet Calçados - Logo" src="images/logo.png" /></a>
+				<span>&copy; 2015</span>
+				<p>Elaborado com <a href="http://getbootstrap.com">Bootstrap</a></p>
+			</div>
+
+			
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>Confira também as empresas parceiras:</span>
+					
+					
+					<p><i class="fa fa-plus-circle"></i>  Kanino</p>
+					<p><i class="fa fa-plus-circle"></i>  Lotus</p>
+				</p> 
+				<p class="footer-links">
+					<a href="outros_projetos.html">Acesse: Outros Projetos</a>
+				</p>
+			</div>
+
+		</footer>
+	
+	
+    <!-- FIM RODAPE -->
   </body>
 </html>
